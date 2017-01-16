@@ -1,0 +1,85 @@
+
+/* Start Savings */
+
+.signature {
+    text-align: center;
+}
+
+.savingsdetails {
+    padding-top: 10px;
+}
+
+#savings-top {
+    padding: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.savings-top-hr {
+    margin: 0;
+}
+
+#savings-top h1 {
+    margin: 0;
+}
+
+/* End Savings */
+
+
+/*savings and faq pages*/
+.content {
+    padding: 1em;
+    background-color: #FFF;
+    color: #000;
+}
+
+#savings h1, #faq h1, #customer h1 {
+    font-size: 2em;
+}
+
+#savings h2, #customer h2 {
+    font-size: 1.75em;
+    letter-spacing: 5px;
+}
+
+#savings h3, #customer h3 {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#savings a, #faq a {
+    color: #006080;
+}
+
+
+@media (min-width: 768px) {
+
+    #savings-top {
+        margin-bottom: 10px;
+    }
+
+    .content {
+        color: #FFF;
+        background-color: transparent;
+    }
+
+    #savings-container {
+        padding: 0;
+        height: 100%;
+        width: 80%;
+    }
+
+    #savings-container h2 {
+        margin-top: 0;
+    }
+
+    #savings-top, .content {
+        background-color: rgba(11, 11, 11, 0.7);
+    }
+}
+
+
+
+
+
+

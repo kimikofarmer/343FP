@@ -1,0 +1,424 @@
+
+/* Start Homepage */
+
+#events-row, #topics-row, #resorts-row {
+    padding: 0;
+    margin: 0;
+}
+
+#events-row, #topics-row {
+    width: 100%;
+}
+
+.events-h2 {
+    font-size: 24px;
+    color: #FFF;
+    text-align: center;
+}
+
+
+.hp-img {
+    width: 100%;
+    height: auto;
+}
+
+.topic-img {
+    max-width: 202px;
+}
+
+.res-img {
+    max-width: 150px;
+}
+
+.mobile-h2 {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #006080;
+}
+
+#resorts-header {
+    text-align: center;
+    font-size: 32px;
+    color: #FFF;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin: 0;
+    /*margin-bottom: 25px;*/
+    /*margin-top: 5px;*/
+}
+
+.resort-h3 {
+    color: #000;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.resort-description {
+    font-style: italic;
+    color: #000;
+    font-size: 11px;
+}
+
+.topic-description {
+    font-size: 12px;
+}
+
+.resorts_button {
+    height: 150px;
+    overflow: hidden;
+    padding: 0.75em;
+    margin-bottom: 5px;
+    background-color: #FFF;
+}
+
+#resorts-row {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #006080;
+}
+
+#resorts-header-div {
+    padding-top: 5px;
+    padding-bottom: 25px;
+    height: 100%;
+}
+
+.left-col {
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+.right-col {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.event-list p {
+    color: #000;
+}
+
+#pitch-col {
+    height: 352px;
+}
+
+#pitch {
+    overflow: scroll;
+    height: 312px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 1.5em;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#pitch p {
+    font-size: 14px;
+    font-family: Lato;
+    color: #006080;
+}
+
+#pitch p>a {
+    font-style: italic;
+}
+
+#mobile-info-row {
+    color: #000;
+    width: 100%;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#mobile-mc-headshot {
+    float: left;
+}
+
+#mobile-mc-info-p {
+    font-size: 12px;
+    margin: 0;
+    width: 60%;
+    float: right;
+}
+
+#mobile-pitch-row {
+    margin: 0;
+    width: 100%;
+}
+
+#mobile-pitch {
+    padding: 1em;
+    margin: 0;
+    font-family: Lato;
+    font-size: 14px;
+    color: #006080;
+}
+
+#mobile-pitch a {
+    color: #000;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.event-list {
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    margin:0;
+    padding:0;
+}
+.event-list > li {
+    background-color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+.event-list > li > .date {
+    display: inline-block;
+    width: 35%;
+    color: rgb(255, 255, 255);
+    background-color: #006080;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.event-list > li > .hm-date {
+    padding: 10px;
+}
+
+.event-list > li > .date > .day {
+    display: block;
+    font-size: 16pt;
+    font-weight: 100;
+    line-height: 1;
+    padding-top: 5px;
+}
+.event-list > li .date > .month {
+    display: block;
+    font-size: 8pt;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.event-list > li > .info {
+    width: 65%;
+    float: right;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.event-list > li > .info > .title {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.event-list > li > .info > .loc {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.event-list > li > .date, .event-list > li {
+    height: 50px;
+}
+
+#resort-dropdown {
+    float: right;
+}
+
+#res-dd {
+    margin: 0;
+    padding: 0;
+}
+
+.resort-drop-link {
+    width: auto;
+    padding: 10px;
+}
+
+.resort-drop-link:hover {
+    background-color: #DDD;
+}
+
+#res-hr {
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* End Homepage */
+
+@media (min-width: 768px) {
+
+    #resort-dropdown {
+        margin-right: 20px;
+    }
+
+    .topic-left {
+        padding-left: 30px;
+    }
+
+    .topic-right {
+        padding-right: 30px;
+    }
+
+    #topics-row {
+        margin-top: 10px;
+        color: #FFF;
+    }
+
+    #mn-container {
+        padding: 0;
+        height: 100%;
+        width: 80%;
+        background-color: rgba(11, 11, 11, 0.7);
+    }
+
+    /* Fixing mobile changes */
+
+    #resorts-header-div {
+        padding-top: 20px;
+    }
+
+    #resorts-header {
+        color: #006080;
+        /*margin-top: 20px;*/
+    }
+
+    #resorts-row {
+        padding: 0;
+        margin: 20px;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .resorts_button {
+        height: 270.5px;
+        overflow: hidden;
+        padding-bottom: 1em;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 10px;
+        background-color: transparent;
+    }
+
+    .event-list > li > .date > .day {
+        font-size: 24pt;
+    }
+
+    .event-list > li .date > .month {
+        font-size: 12pt;
+    }
+
+    .event-list > li > .date {
+        width: 100%;
+    }
+
+    .event-list > li > .info {
+        width: auto;
+        float: none;
+    }
+
+    .event-list > li > .info > .title {
+        font-size: 14px;
+    }
+
+    .topic-description {
+        font-size: 14px;
+    }
+
+    .left-col {
+        padding-left: 15px;
+    }
+
+    .right-col {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .resort-h3 {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    /* Done fixing mobile changes */
+
+    .event-list > li {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 70px;
+        padding:0;
+    }
+
+    .event-list > li > .date  {
+        display: inline-block;
+        width: 60px;
+        float: left;
+    }
+
+    .event-list > li > .info {
+        background-color: rgb(245, 245, 245);
+        overflow: hidden;
+    }
+
+    .event-list > li > .date {
+        width: 60px;
+        height: 70px;
+        padding:0;
+        margin:0;
+    }
+
+    .event-list > li > .info {
+        position: relative;
+        height: 70px;
+        text-align: left;
+        padding-right: 20px;
+        padding-left: 5px;
+    }
+
+    .event-list > li > .info > .title,
+    .event-list > li > .info > .loc {
+        padding-top: 0;
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .resorts_button {
+        height: 268.5px;
+        overflow: hidden;
+    }
+
+    .resort-description {
+        font-style: normal;
+        font-size: 12px;
+    }
+
+    .event-list > li > .info > .title {
+        font-size: 18px;
+    }
+
+    #pitch p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .resorts_button {
+        height: 251.5px;
+        overflow: hidden;
+    }
+
+    .resort-description {
+        font-size: 14px;
+    }
+
+    #pitch {
+        height: 286px;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>343 FP</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!--general stylesheet-->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!--page stylesheet-->
+    <link rel="stylesheet" href="../css/homepage.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../img/island.png">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled Bootstrap JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<nav id="desktop-nav" class="navbar hidden-xs" role="navigation">
+    <div class="nav-col col-sm-5">
+        <a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/homepage.html">
+            <img class="nav-img" id="logo-img" src="../img/image_logo_mc.jpg" alt=""/>
+        </a>
+    </div>
+
+    <div class="nav-col col-sm-5">
+        <ul id="nav-list">
+            <li id="mc-headshot">
+                <img src="../img/image_molly_sumption.jpg" alt=""/>
+            </li>
+            <li id="mc-info">
+                <p id="mc-info-p">
+                    <span><strong>Molly Sumption</strong></span><br/>
+                    <a href="tel:+1.206.575.0907"><span class="phone-span">Seattle: </span>(206) 575-0907</a><br/>
+                    <a href="tel:+1.503.715.3107"><span class="phone-span">Portland: </span>(503) 715-3107</a><br/>
+                    <a href="tel:+1.800.777.0907"><span class="phone-span">Toll Free: </span>(800) 777-0907</a><br/>
+
+                    <!-- Email trigger modal -->
+                    <span>
+                        <a href="" data-toggle="modal" data-target="#emailModal">
+                            Email Molly
+                        </a>
+                    </span>
+
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="nav-col col-sm-2">
+        <a href="http://www.mollyscaribbean.com/certified_sandals_benefit/">
+            <img class="nav-img" id="sandals-img" src="../img/image_logo_sandals_cert.jpg" alt=""/>
+        </a>
+    </div>
+</nav>
+
+<nav id="mobile-nav" class="navbar hidden-sm hidden-md hidden-lg" role="navigation">
+
+    <a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/homepage.html">
+        <img id="mobile-mc-logo" src="../img/image_logo_mc.jpg" alt=""/>
+    </a>
+
+    <a href="http://www.mollyscaribbean.com/certified_sandals_benefit/">
+        <img id="mobile-mc-sandals-logo" src="../img/image_logo_sandals_cert.jpg" alt=""/>
+    </a>
+
+    <div class="btn-group dropdown" id="mobile-dropdown">
+        <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+            <i class="fa fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/faq.html">FAQS</a></li>
+            <li><a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/customer.html">Customer Reviews</a></li>
+            <!-- Email trigger modal -->
+            <li>
+                <a href="" data-toggle="modal" data-target="#emailModal">
+                    Contact Me
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
+<main>
+
+    <div id="desktop-homepage">
+
+        <div class="hidden-sm hidden-md hidden-lg" id="mobile">
+            <hr style="margin-top: 5px; margin-bottom: 5px;"/>
+            <div class="row" id="mobile-info-row">
+                <div class="container">
+                    <img id="mobile-mc-headshot" src="../img/image_molly_sumption.jpg" alt=""/>
+                    <p id="mobile-mc-info-p">
+                        <span><strong>Molly Sumption</strong></span><br/>
+                        <a href="tel:+1.206.575.0907"><span class="phone-span">Seattle: </span>(206) 575-0907</a><br/>
+                        <a href="tel:+1.503.715.3107"><span class="phone-span">Portland: </span>(503) 715-3107</a><br/>
+                        <a href="tel:+1.800.777.0907"><span class="phone-span">Toll Free: </span>(800) 777-0907</a><br/>
+
+                        <!-- Email trigger modal -->
+                        <span>
+                            <a href="" data-toggle="modal" data-target="#emailModal">
+                                Email Molly
+                            </a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row" id="mobile-pitch-row">
+                <hr style="margin-top: 5px; margin-bottom: 5px;"/>
+                <div class="container" id="mobile-pitch">
+                    <p>
+                        Booking your trip through a Preferred Sandals / Beaches Specialist, ensures you
+                        are getting the best possible service to make your honeymoon or vacation a memorable
+                        one. I charge no fees to my customers. All commissions come to me from the
+                        resorts that I represent.
+                        <a href="http://www.mollyscaribbean.com/certified_sandals_benefit/">
+                            Learn more
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Email Modal -->
+        <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Contact Molly's Caribbean</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <form action="http://www.mollyscaribbean.com/wp-content/themes/mollyscaribbean/email.php" method="post">
+                            <fieldset class="contactinfo">
+                                <label for="name">Your Name</label>
+                                <input class="form-control" name="name" size="50" type="text" placeholder="name" required/>
+                            </fieldset>
+                            <br/>
+                            <fieldset class="contactinfo">
+                                <label for="email">Your Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="email" required/>
+                            </fieldset>
+                            <br/>
+                            <fieldset class="contactinfo">
+                                <label for="message">Your Message</label>
+                                <textarea class="form-control" cols="50" rows="6" name="message"></textarea>
+                            </fieldset>
+                            <br/>
+                            <div id="email-buttons">
+                                <button id="email-submit-button" type="submit" class="btn btn-primary">Submit</button>
+                                <button id="email-cancel-button" type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Email Modal -->
+
+        <div id="mn-container" class="container">
+            <div class="row" id="events-row">
+                <div id="pitch-col" class="col-sm-4 hidden-xs">
+                    <div id="pitch">
+                        <p>
+                            Booking your trip through a Preferred Sandals / Beaches Specialist, ensures you
+                            are getting the best possible service to make your honeymoon or vacation a memorable
+                            one. I charge no fees to my customers. All commissions come to me from the
+                            resorts that I represent.
+                            <a href="http://www.mollyscaribbean.com/certified_sandals_benefit/">
+                                Learn more
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+
+                    <h2 class="hidden-xs events-h2">Find me in <br class="hidden-lg"> Seattle!</h2>
+                    <h2 class="hidden-sm hidden-md hidden-lg mobile-h2">Seattle Events</h2>
+
+                    <ul class="event-list">
+                        <li>
+                            <div class="date">
+                                <span class="day">4</span>
+                                <span class="month">Oct</span>
+                            </div>
+                            <div class="info">
+                                <h2 class="title"><a href="http://www.mollyscaribbean.com/october-4-2016-urban-unveiled">Urban <br class="hidden-sm hidden-md hidden-lg"/> Unveiled</a></h2>
+                                <p class="loc hidden-xs hidden-sm hidden-md">Fairmont Olympic Hotel</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="date">
+                                <span class="day">16</span>
+                                <span class="month">Jan</span>
+                            </div>
+                            <div class="info">
+                                <h2 class="title"><a href="http://www.mollyscaribbean.com/january-16-17-2016-seattle-wedding-show/">Seattle <br class="hidden-sm hidden-md hidden-lg"/> Wedding <br class="hidden-sm hidden-md hidden-lg"/> Show</a></h2>
+                                <p class="loc hidden-xs hidden-sm hidden-md">Washington State Convention Center</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="date hm-date">
+                                <span class="day"></span> <!-- Spacing -->
+                                <span class="month"><br class="hidden-xs">Fall 2016<br/></span>
+                            </div>
+                            <div class="info">
+                                <h2 class="title"><a href="http://www.mollyscaribbean.com/seattle-complimentary-honeymoon-destination-wedding-consultations-at-starbucks/">Complimentary <br class="hidden-sm hidden-md hidden-lg"/> Honeymoon <br class="hidden-sm hidden-md hidden-lg"/> Consultations</a></h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-4">
+
+                    <h2 class="hidden-xs events-h2">Find me in <br class="hidden-lg"> Portland!</h2>
+                    <h2 class="hidden-sm hidden-md hidden-lg mobile-h2">Portland Events</h2>
+
+                    <ul class="event-list">
+                        <li>
+                            <div class="date">
+                                <span class="day">3</span>
+                                <span class="month">Oct</span>
+                            </div>
+                            <div class="info">
+                                <h2 class="title"><a href="http://www.mollyscaribbean.com/october-304-2015-portland-wedding-showcase/">Portland <br class="hidden-sm hidden-md hidden-lg"/> Wedding <br class="hidden-sm hidden-md hidden-lg"/> Showcase</a></h2>
+                                <p class="loc hidden-xs hidden-sm hidden-md">Oregon Convention Center</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="date">
+                                <span class="day">16</span>
+                                <span class="month">Jan</span>
+                            </div>
+                            <div class="info">
+                                <h2 class="title"><a href="http://www.mollyscaribbean.com/january-12-13-portland-bridal-show/">Portland <br class="hidden-sm hidden-md hidden-lg"/> Bridal <br class="hidden-sm hidden-md hidden-lg"/> Show</a></h2>
+                                <p class="loc hidden-xs hidden-sm hidden-md">Oregon Convention Center</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="date hm-date">
+                                <span class="day"></span> <!-- Spacing -->
+                                <span class="month"><br class="hidden-xs">Fall 2016<br/></span>
+                            </div>
+                            <div class="info">
+                                <h2 class="title"><a href="http://www.mollyscaribbean.com/seattle-complimentary-honeymoon-destination-wedding-consultations-at-starbucks/">Complimentary <br class="hidden-sm hidden-md hidden-lg"/> Honeymoon <br class="hidden-sm hidden-md hidden-lg"/> Consultations</a></h2>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="topics-row">
+
+                <div class="topic-left col-xs-12 col-sm-4">
+                    <div>
+                        <div class="hidden-xs">
+                            <a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/faq.html" title="Frequently Asked Questions"><img class="topic-img hp-img" src="../img/image_button_faq.jpg"></a>
+                        </div>
+                        <a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/faq.html" title="Frequently Asked Questions">
+                            <h3 class="hidden-xs">FAQ's</h3>
+                            <h2 class="hidden-sm hidden-md hidden-lg mobile-h2">FAQ's</h2>
+                        </a>
+                        <p class="topic-description">
+                            Planning a honeymoon or trip to the Caribbean,
+                            <span class="hidden-xs">these are the questions I get asked most.</span>
+                            <span class="hidden-sm hidden-md hidden-lg">
+                                <a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/faq.html">
+                                    these are the questions I get asked most.
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4">
+                    <div>
+                        <div class="hidden-xs">
+                            <a href="http://www.mollyscaribbean.com/mollys-favorites" title="Molly&#39;s Favorites"><img class="topic-img hp-img" src="../img/image_button_molly_fav.jpg"></a>
+                        </div>
+                        <a href="http://www.mollyscaribbean.com/mollys-favorites" title="Molly&#39;s Favorites">
+                            <h3 class="hidden-xs">Molly's Favorites</h3>
+                            <h2 class="hidden-sm hidden-md hidden-lg mobile-h2">Molly's Favorites</h2>
+                        </a>
+                        <p class="topic-description">
+                            These are some of my favorite resorts and things
+                            <span class="hidden-xs">to do in the Caribbean.</span>
+                            <span class="hidden-sm hidden-md hidden-lg">
+                                <a href="http://www.mollyscaribbean.com/mollys-favorites">
+                                    to do in the Caribbean.
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="topic-right col-xs-12 col-sm-4">
+                    <div>
+                        <div class="hidden-xs">
+                            <a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/customer.html" title="What My Customers Say"><img class="topic-img hp-img" src="../img/image_button_what_cust_say.jpg"></a>
+                        </div>
+                        <a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/customer.html" title="What My Customers Say">
+                            <h3 class="hidden-xs">What My Customers Say</h3>
+                            <h2 class="hidden-sm hidden-md hidden-lg mobile-h2">What My Customers Say</h2>
+                        </a>
+                        <p class="topic-description">
+                            Read actual letters and comments
+                            <span class="hidden-xs">from my customers.</span>
+                            <span class="hidden-sm hidden-md hidden-lg">
+                                <a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/customer.html">
+                                    from my customers.
+                                </a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" id="resorts-row">
+
+                <div class="row" id="resorts-header-div">
+                    <div class="col-sm-2 col-md-4 hidden-xs">
+
+                    </div>
+                    <div class="col-xs-10 col-sm-8 col-md-4">
+                        <h2 id="resorts-header">Resorts</h2>
+                    </div>
+                    <div class="col-xs-1 col-sm-2 col-md-4">
+                        <div class="btn-group dropdown" id="resort-dropdown">
+                            <button id="res-dd-button" class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <ul id="res-dd" class="dropdown-menu dropdown-menu-right">
+                                <li class="resort-drop-link">
+                                    <span id="cam-link">
+                                        <a href="https://students.washington.edu/nordale1/info343/343FP/paradise.html">Picture yourself in paradise
+                                            <i class="fa fa-camera"></i>
+                                        </a>
+                                    </span>
+                                </li>
+                                <hr id="res-hr"/>
+                                <li class="resort-drop-link">
+                                    <span id="map-link">
+                                        <a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/map.html">Find your destination
+                                            <i class="fa fa-globe"></i>
+                                        </a>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="left-col col-xs-6 col-sm-3">
+
+                    <div class="resorts_button">
+                        <div class="button_image hidden-xs">
+                            <a href="http://www.sandals.com/?referral=101280" title="Visit the Sandals Website"><img class="res-img hp-img" src="../img/image_button_resorts_sandals.jpg"></a>
+                        </div>
+                        <a href="http://www.sandals.com/?referral=101280" title="Visit the Sandals Website">
+                            <h3 class="resort-h3">Sandals</h3>
+                        </a>
+                        <p class="resort-description">A diverse collection of 14 of earth's most idyllic Luxury All Inclusive resorts.</p>
+                    </div>
+
+                    <div class="resorts_button">
+                        <div class="button_image hidden-xs">
+                            <a href="http://www.excellence-resorts.com/" title="Visit the Excellence Resorts Website"><img class="res-img hp-img" src="../img/image_button_resorts_excellence.jpg"></a>
+                        </div>
+                        <a href="http://www.excellence-resorts.com/" title="Visit the Excellence Resorts Website">
+                            <h3 class="resort-h3">Excellence</h3>
+                        </a>
+                        <p class="resort-description">The Caribbean's premier all inclusive luxury adults only resort group.</p>
+                    </div>
+
+                </div>
+
+                <div class="right-col col-xs-6 col-sm-3">
+
+                    <div class="resorts_button">
+                        <div class="button_image hidden-xs">
+                            <a href="http://www.beaches.com/specials/freenights.cfm?referral=101280" title="Visit the Beaches Website"><img class="res-img hp-img" src="../img/image_button_resorts_beaches.jpg"></a>
+                        </div>
+                        <a href="http://www.beaches.com/specials/freenights.cfm?referral=101280" title="Visit the Beaches Website">
+                            <h3 class="resort-h3">Beaches</h3>
+                        </a>
+                        <p class="resort-description">Your perfect family getaway awaits you at Beaches Resorts in Jamaica and Turks and Caicos.</p>
+                    </div>
+
+                    <div class="resorts_button">
+                        <div class="button_image hidden-xs">
+                            <a href="http://www.eliteislandresorts.com/" title="Visit the Elite Island Resort Website"><img class="res-img hp-img" src="../img/image_button_resorts_elite.jpg"></a>
+                        </div>
+                        <a href="http://www.eliteislandresorts.com/" title="Visit the Elite Island Resort Website">
+                            <h3 class="resort-h3">Elite Island</h3>
+                        </a>
+                        <p class="resort-description">An impressive collection of unique beachfront Caribbean resorts.</p>
+                    </div>
+
+                </div>
+
+                <div class="left-col col-xs-6 col-sm-3">
+
+                    <div class="resorts_button">
+                        <div class="button_image hidden-xs">
+                            <a href="http://www.grandpineapple.com/" title="Visit the Grand Pineapple Website"><img class="res-img hp-img" src="../img/image_button_resorts_pineapple.jpg"></a>
+                        </div>
+                        <a href="http://www.grandpineapple.com/" title="Visit the Grand Pineapple Website">
+                            <h3 class="resort-h3">Grand Pineapple</h3>
+                        </a>
+                        <p class="resort-description">Caribbean family beach resorts that feature colorful accommodations nestled amidst lush flowering gardens.</p>
+                    </div>
+
+                    <div class="resorts_button">
+                        <div class="button_image hidden-xs">
+                            <a href="http://www.secretsresorts.com/" title="Visit the Secrets Resort and Spa Website"><img class="res-img hp-img" src="../img/image_button_resorts_secrets.jpg"></a>
+                        </div>
+                        <a href="http://www.secretsresorts.com/" title="Visit the Secrets Resort and Spa Website">
+                            <h3 class="resort-h3">Secrets</h3>
+                        </a>
+                        <p class="resort-description">Secrets Resorts &amp; Spas offer adults an escape to romance and sensuality in spectacular oceanfront settings.</p>
+                    </div>
+
+                </div>
+
+                <div class="right-col col-xs-6 col-sm-3">
+
+                    <div class="resorts_button">
+                        <div class="button_image hidden-xs">
+                            <a href="http://couples.com/" title="Visit the Couples Website"><img class="res-img hp-img" src="../img/image_button_resorts_couples.jpg"></a>
+                        </div>
+                        <a href="http://couples.com/" title="Visit the Couples Website">
+                            <h3 class="resort-h3">Couples</h3>
+                        </a>
+                        <p class="resort-description">Transform your next Jamaica vacation into a romantic getaway at one of their four all-inclusive resorts.</p>
+                    </div>
+
+                    <div class="resorts_button">
+                        <div class="button_image hidden-xs">
+                            <a href="http://www.karismahotels.com/" title="Visit the Karisma Hotel and Resorts Website"><img class="res-img hp-img" src="../img/image_button_resorts_karisma.jpg"></a>
+                        </div>
+                        <a href="http://www.karismahotels.com/" title="Visit the Karisma Hotel and Resorts Website">
+                            <h3 class="resort-h3">Karisma</h3>
+                        </a>
+                        <p class="resort-description">a premier collection of award-winning properties throughout the Riviera Maya, and Mexico.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+</body>
+</html>

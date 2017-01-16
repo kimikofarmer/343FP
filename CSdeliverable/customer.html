@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>343 FP</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!--general stylesheet-->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!--page stylesheet-->
+    <link rel="stylesheet" href="../css/customer.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="../img/island.png">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled Bootstrap JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<nav id="desktop-nav" class="navbar hidden-xs" role="navigation">
+    <div class="nav-col col-sm-5">
+        <a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/homepage.html">
+            <img class="nav-img" id="logo-img" src="../img/image_logo_mc.jpg" alt=""/>
+        </a>
+    </div>
+
+    <div class="nav-col col-sm-5">
+        <ul id="nav-list">
+            <li id="mc-headshot">
+                <img src="../img/image_molly_sumption.jpg" alt=""/>
+            </li>
+            <li id="mc-info">
+                <p id="mc-info-p">
+                    <span><strong>Molly Sumption</strong></span><br/>
+                    <a href="tel:+1.206.575.0907"><span class="phone-span">Seattle: </span>(206) 575-0907</a><br/>
+                    <a href="tel:+1.503.715.3107"><span class="phone-span">Portland: </span>(503) 715-3107</a><br/>
+                    <a href="tel:+1.800.777.0907"><span class="phone-span">Toll Free: </span>(800) 777-0907</a><br/>
+
+                    <!-- Email trigger modal -->
+                    <span>
+                        <a href="" data-toggle="modal" data-target="#emailModal">
+                            Email Molly
+                        </a>
+                    </span>
+
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="nav-col col-sm-2">
+        <a href="http://www.mollyscaribbean.com/certified_sandals_benefit/">
+            <img class="nav-img" id="sandals-img" src="../img/image_logo_sandals_cert.jpg" alt=""/>
+        </a>
+    </div>
+</nav>
+
+<nav id="mobile-nav" class="navbar hidden-sm hidden-md hidden-lg" role="navigation">
+
+    <a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/homepage.html">
+        <img id="mobile-mc-logo" src="../img/image_logo_mc.jpg" alt=""/>
+    </a>
+
+    <a href="http://www.mollyscaribbean.com/certified_sandals_benefit/">
+        <img id="mobile-mc-sandals-logo" src="../img/image_logo_sandals_cert.jpg" alt=""/>
+    </a>
+
+    <div class="btn-group dropdown" id="mobile-dropdown">
+        <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+            <i class="fa fa-bars"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right">
+            <li><a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/faq.html">FAQS</a></li>
+            <li><a href="http://students.washington.edu/nordale1/info343/343FP/CSdeliverable/customer.html">Customer Reviews</a></li>
+            <!-- Email trigger modal -->
+            <li>
+                <a href="" data-toggle="modal" data-target="#emailModal">
+                    Contact Me
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
+<main id="customer">
+
+    <!-- Email Modal -->
+    <div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Contact Molly's Caribbean</h4>
+                </div>
+                <div class="modal-body">
+
+                    <form action="http://www.mollyscaribbean.com/wp-content/themes/mollyscaribbean/email.php" method="post">
+                        <fieldset class="contactinfo">
+                            <label for="name">Your Name</label>
+                            <input class="form-control" name="name" size="50" type="text" placeholder="name" required/>
+                        </fieldset>
+                        <br/>
+                        <fieldset class="contactinfo">
+                            <label for="email">Your Email</label>
+                            <input type="email" name="email" class="form-control" placeholder="email" required/>
+                        </fieldset>
+                        <br/>
+                        <fieldset class="contactinfo">
+                            <label for="message">Your Message</label>
+                            <textarea class="form-control" cols="50" rows="6" name="message"></textarea>
+                        </fieldset>
+                        <br/>
+                        <div id="email-buttons">
+                            <button id="email-submit-button" type="submit" class="btn btn-primary">Submit</button>
+                            <button id="email-cancel-button" type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Email Modal -->
+
+    <div id="mn-container" class="container">
+        <h1>Customer Review</h1>
+        <ul>
+            <li class="content">
+                <h2>Rebecca and Bryan Fry</h2>
+                <p>Molly,</p>
+                <p>We cannot thank you enough for helping us with our Weddingmoon at Sandals Whitehouse!!
+                    We had SUCH a wonderful time – and I think we speak for EVERYONE in our party when we say this!
+                    The resort was beautiful, VERY clean, and on an incredible stretch of beachfront!
+                    The food was delicious, the staff MORE than friendly and helpful, and the wedding was beyond what we had hoped for!
+                    Overall, this was an incredible experience and we truly want to thank you for helping us all along the way!  You made this process painless and fluid.  We will definitely be in touch for a vacation in the future!!</p>
+                <p>Sincerely,</p>
+                <p>Rebecca &amp; Bryan Fry</p>
+
+                <div id="gallery1" class="gallery galleryid-1077 gallery-columns-8 gallery-size-thumbnail"><dl class="gallery-item">
+                <dt class="gallery-icon portrait">
+                    <a href="http://www.mollyscaribbean.com/wp-content/uploads/fry_001-e1309911977715.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/fry_001-50x50.jpg" class="attachment-thumbnail colorbox-1077 " alt="fry_001"></a>
+                </dt></dl><dl class="gallery-item">
+                <dt class="gallery-icon landscape">
+                    <a href="http://www.mollyscaribbean.com/wp-content/uploads/fry_002.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/fry_002-50x50.jpg" class="attachment-thumbnail colorbox-1077 " alt="fry_002"></a>
+                </dt></dl><dl class="gallery-item">
+                <dt class="gallery-icon landscape">
+                    <a href="http://www.mollyscaribbean.com/wp-content/uploads/fry_003.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/fry_003-50x50.jpg" class="attachment-thumbnail colorbox-1077 " alt="fry_003"></a>
+                </dt></dl>
+                <br>
+                </div>
+            </li>
+            <li class="content">
+                <h2>Gordon “Butch” Stewart, Chairman of Sandals Resorts</h2>
+                <p>Dear Friends,</p>
+                <p>As Chairman of Sandals Resorts, I recommend that you book your Sandals honeymoon or vacation through Molly’s Caribbean a Preferred Sandals Agency. Why, because these are travel agents who know Sandals best. Having visited all 17 Sandals Resorts in Jamaica, Antigua, St. Lucia and the Bahamas they can help you choose from the many Sandals Resorts and packages.</p>
+                <p>Honorable Gordon “Butch” Stewart OJ., C.D.</p>
+                <p><a href="http://www.mollyscaribbean.com/wp-content/uploads/butchsteartletter.pdf">Click here to view the whole letter</a></p>
+            </li>
+            <li class="content">
+                <h2>Hisham and Anna Othman</h2>
+                <p>Dear Molly,</p>
+                <p>Thank you so much for helping us plan our honeymoon to Sandals Whitehouse European Village and Spa in Jamaica. We had a fabulous time — we almost didn’t want to come home! We were in awe of how beautiful the resort was, how courteous (and fun!) the staff members were, and how delicous the meals, desserts, and beverages were. We loved every aspect of our vacation and can’t wait to go back!</p>
+                <p>Thank you also for hooking us up with the honeymoon extras (i.e., breakfast in bed, champagne and flower petals, etc) as well as the card and the cheese plate you had delivered to our room the very first day. It was so thoughtful and exactly what we needed to refuel after a long journey. Everything went off without a hitch, our honeymoon was perfect, and we have you to thank for helping to make it so. </p>
+                <p>Please enjoy the pictures! We look forward to working with you again, </p>
+                <p>Hisham and Anna Othman</p>
+                <div id="gallery-3" class="gallery galleryid-1070 gallery-columns-8 gallery-size-thumbnail"><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/Othman_001.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/Othman_001-50x50.jpg" class="attachment-thumbnail colorbox-1070 " alt="Othman_001"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/Othman_002.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/Othman_002-50x50.jpg" class="attachment-thumbnail colorbox-1070 " alt="Othman_002"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/Othman_003.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/Othman_003-50x50.jpg" class="attachment-thumbnail colorbox-1070 " alt="Othman_003"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/Othman_004.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/Othman_004-50x50.jpg" class="attachment-thumbnail colorbox-1070 " alt="Othman_004"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/Othman_005.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/Othman_005-50x50.jpg" class="attachment-thumbnail colorbox-1070 " alt="Othman_005"></a>
+                    </dt></dl>
+                    <br>
+                </div>
+            </li>
+            <li class="content">
+                <h2>Adrianne Lewis</h2>
+                <p>Molly,</p>
+                <p>Thank you soooo much for your help in making our Honeymoon the best ever! The suggestions you gave us on selecting the Sandals Antigua location, and advice you offered on what types of offers and amenities would fit our needs was more than helpful. We didn’t want to leave at the end of the week!! Thanks for answering all of our questions during our travel prep, even the obscure and off the wall ones =)</p>
+                <p>Thanks again,</p>
+                <p>Adrianne and Justin</p>
+            </li>
+            <li class="content">
+                <h2>Mike and Toni Davis</h2>
+                <p>Good morning Molly,</p>
+                <p>I have been meaning to write you in regards to our Sandals Grande St Lucian vacation.  We wanted to thank you so much for all your help in making our honeymoon more perfect than we could imagine.  From the time we got on the plane until we got dropped back off at the airport, we were treated like royalty.  Literally, every need or desire is anticipated by the Sandals staff.  We even had surprise drinks and snacks delivered to our room a couple times from Kristol!  Every person there made us feel welcome and comfortable.  Our room was amazing and we enjoyed a lot of our time in the privacy of our lagoon pool, as the main pool was pretty crowded all the time.  Sandals definitely has the all-inclusive couples retreat down to a science of romance and relaxation.  The add-on Romance package was definitely worth every bit.  It just gave more opportunity for us to spend quality time alone.  The private photo shoot was so much fun, our photographer, Lance, had us laughing the entire time.  And our pictures came out so beautifully.  All-in-all we had an incredible time and will be returning to Sandals the next time we are looking for an island getaway.  We would recommend going to anyone!  </p>
+                <p>We would also like to sign up for the Sandals Select Guest program as well.  Thank  you for taking care of absolutely everything we wished for and making our honeymoon truly the most amazing experience of our lives!  </p>
+                <p>Mike and Toni Davis</p>
+            </li>
+            <li class="content">
+                <h2>Heather Keel</h2>
+                <p>Molly,</p>
+                <p>I just wanted to send you a message thanking you for helping with planning our trip to Whitehouse. We had the most amazing trip ever. Nothing could have made it any better. The resort was absolutely perfect, we were treated like royalty from the minute we stepped off of the bus at the resort, which was so wonderful for this special time in our lives. We talked with many guests who frequent Sandals Whitehouse and guests who have visited other Sandals on the island of Jamaica and prefer Whitehouse over the others. The surroundings and ambiance were just what we were looking for, the weather was perfect. We honestly could not come up with a single complaint, and will definitely go back some day <img src="http://www.mollyscaribbean.com/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley"></p>
+                <p>The wedding day was everything we wanted and more… we had so much fun and could not imagine having done anything differently.<br>
+                    As requested I will mail a wedding photo to you. </p>
+                <p>Thank you again so much for guiding us to Whitehouse.</p>
+                <p>Heather (and Joe)</p>
+            </li>
+            <li class="content">
+                <h2>Jeremy Beck</h2>
+                <p>Hey Molly,</p>
+                <p>As promised, here are a few pictures we took at the Emerald Bay resort from our honeymoon earlier this month.  I also wanted to take a minute to thank you for all of your help setting up our trip.  Even though you are in a different state, you made the process incredibly easy and were there to answer every little question we came up with in the days leading up to it.  If only getting back through customs was as smooth as booking with you!  </p>
+                <p>We will definitely be booking any future Sandals trips through you and will recommend you to our friends.  We also signed up with the Sandals Select program as further incentive to come back.  Let me know if you have any questions about the resort itself since you haven’t gotten a chance to go (yet!).  We really enjoyed the resort as it was very laid back and the beaches around the resort were gorgeous.  We kayaked, went scuba diving, and took a private taxi tour around most of Exuma while we were there, so there was plenty to do!</p>
+                <p>Hope all is well with you, and thanks again.</p>
+                <p>Sincerely,</p>
+                <p>Jeremy Beck</p>
+
+                <div id="gallery-7" class="gallery galleryid-1061 gallery-columns-8 gallery-size-thumbnail"><dl class="gallery-item">
+                    <dt class="gallery-icon portrait">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/beck_fountain.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/beck_fountain-50x50.jpg" class="attachment-thumbnail colorbox-1061 " alt="beck_fountain"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon portrait">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/beck_standing.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/beck_standing-50x50.jpg" class="attachment-thumbnail colorbox-1061 " alt="beck_standing"></a>
+                    </dt></dl>
+                    <br>
+                </div>
+            </li>
+            <li class="content">
+                <h2>Laurie Lindblad</h2>
+                    <p>Property: Grande St Lucian Honeymoon</p>
+                <p>Hi Molly, We had a great trip! Definitely a higher level of pampering and service than we’re used to, and it’s just what we needed. Our room had a view of the Atlantic, which we weren’t expecting, so that was a bonus. The resort was beautiful, and the level of detail that went into all that they did was amazing; from wedding planning to beach b-b-q’s to the cocktail welcome – nothing was overlooked. The service was truly amazing, and staff were by far some of the friendliest we’ve add. It’s obvious the hotel works hard on training and professionalism and customer service. And the food was excellent as well. I’ve attached 3 photos: the hotel from Pigeon Island; the two of us on the way back to the airport; and, the highlight for me: the CHOCOLATE BUFFET! Thank you for your help.</p>
+                <div id="gallery-8" class="gallery galleryid-886 gallery-columns-8 gallery-size-thumbnail"><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/lindblad01.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/lindblad01-50x50.jpg" class="attachment-thumbnail colorbox-886 " alt="lindblad01"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/lindblad02.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/lindblad02-50x50.jpg" class="attachment-thumbnail colorbox-886 " alt="lindblad02"></a>
+                    </dt></dl>
+                    <br>
+                </div>
+            </li>
+            <li class="content">
+                <h2>Jake and Kara Goodman</h2>
+                <p>Property: Ocho Rios Honeymoon</p>
+                <p>Hi Molly, We wanted to thank you very very much for helping us plan our trip. You definatly helped take alot of stress off our shoulders, so again we thank you! Ocho Rios was ABSOLUTELY GORGEOUS! We could not have asked for a more perfect place to spend our honeymoon. Everyone there was so nice and made us feel very welcome. The food was great too! We are not going to lie, being able to eat and drink whenever you want, and not having to pull out a wallat made it extra hard to come back to the “real world” at home. We would love for you to be of future assistance when we plan more trips. We know we will be going back to another sandals resort. Just need to pick the time, and place! Thank you again for everything and we have attached some photos of our trip. Enjoy!</p>
+                <div id="gallery-9" class="gallery galleryid-945 gallery-columns-8 gallery-size-thumbnail"><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/goodman01.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/goodman01-50x50.jpg" class="attachment-thumbnail colorbox-945 " alt="goodman01"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/goodman02.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/goodman02-50x50.jpg" class="attachment-thumbnail colorbox-945 " alt="goodman02"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/goodman03.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/goodman03-50x50.jpg" class="attachment-thumbnail colorbox-945 " alt="goodman03"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/goodman04.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/goodman04-50x50.jpg" class="attachment-thumbnail colorbox-945 " alt="goodman04"></a>
+                    </dt></dl>
+                    <br>
+                </div>
+            </li>
+            <li class="content">
+                <h2>Katie and Rob Davison</h2>
+                <p>Property: Grande Antigua Honeymoon</p>
+                <p>Hi Molly, I wanted to say a big thank you for all of your help with planning and arranging our honeymoon! We recently returned from Sandals Grande Antigua (picture attached!) and had the best time! We were upgraded to a bigger room (which I assume you had something to do with!) and the staff could not have been friendlier or more accommodating. We took advantage of the water sports and went kayaking and snorkeling, but otherwise lounged by the pool and enjoyed being lazy J We definitely got our money’s worth with the amount of food and drinks we consumed! The resort was beautiful (as was the weather!) and we really appreciate all you did to make the travel and hotel arrangements seamless. Thank You!</p>
+                <div id="gallery-10" class="gallery galleryid-943 gallery-columns-8 gallery-size-thumbnail"><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/davison.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/davison-50x50.jpg" class="attachment-thumbnail colorbox-943 " alt="davison"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/an-013.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/an-013-50x50.jpg" class="attachment-thumbnail colorbox-943 " alt="an-013 © Unique Vacations, Inc."></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/an-041.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/an-041-50x50.jpg" class="attachment-thumbnail colorbox-943 " alt="an-041 © Unique Vacations, Inc."></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/an-081.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/an-081-50x50.jpg" class="attachment-thumbnail colorbox-943 " alt="an-081 © Unique Vacations, Inc."></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/an-117.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/an-117-50x50.jpg" class="attachment-thumbnail colorbox-943 " alt="an-117 © Unique Vacations, Inc."></a>
+                    </dt></dl>
+                    <br>
+                </div>
+            </li>
+            <li class="content">
+                <h2>Justin and Jen Verlinda</h2>
+                <p>Property: Sandals Negril Destination Wedding</p>
+                <p>Molly, Justin and I begin to tell you what an amazing time we had at Sandals Negril. The people, the resort, the food, the entertainment, it was everything we had ever dreamed of and more for our wedding. Before we even landed back in Seattle we were already thinking of our next Sandals trip. We appreciate all your help with the planning and will be using your services most likely for the rest of our life! Attached are some of the photos from our special day. Thanks again, and we look forward to working with you again real soon.</p>
+                <div id="gallery-11" class="gallery galleryid-941 gallery-columns-8 gallery-size-thumbnail"><dl class="gallery-item">
+                    <dt class="gallery-icon portrait">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/006.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/006-50x50.jpg" class="attachment-thumbnail colorbox-941 " alt="Verlinda1"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/008.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/008-50x50.jpg" class="attachment-thumbnail colorbox-941 " alt="Verlinda2"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/020.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/020-50x50.jpg" class="attachment-thumbnail colorbox-941 " alt="Verlinda3"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/ne-012.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/ne-012-50x50.jpg" class="attachment-thumbnail colorbox-941 " alt="Verlinda4 © Unique Vacations, Inc."></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/ne-102.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/ne-102-50x50.jpg" class="attachment-thumbnail colorbox-941 " alt="Verlinda5 © Unique Vacations, Inc."></a>
+                    </dt></dl>
+                    <br style="clear: both">
+                </div>
+            </li>
+            <li class="content">
+                <h2>Vicki and Jeff Whitmoyer</h2>
+                <p> Sandals Montego Bay Destination Wedding</p>
+                <p>Our decision to have a Weddingmoon at Sandals in Montego Bay Jamaica was one of the best decisions we have ever made. With the expertise and guidance of Molly Sumption planning took almost no time at all. We simply chose the resort, invited our guests, and then we just had to sit back and wait for our special day to arrive. Once at the resort we met with the wedding planner and made a few final decisions. The resort took care of everything. We had no stress and were not worried about anything. Everything was taken care of. Our wedding was flawless, far better than we ever dreamed it would be. We were fortunate to have twenty friends and family there with us to witness our wedding. The wedding was amazing, but the vacation in paradise with our friends and family was priceless. We recommend this to anyone who is planning their own wedding. Have a Sandals Weddingmoon and you will not regret that you did!</p>
+
+                <div id="gallery-12" class="gallery galleryid-939 gallery-columns-8 gallery-size-thumbnail"><dl class="gallery-item">
+                    <dt class="gallery-icon portrait">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/dsc01346.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/dsc01346-50x50.jpg" class="attachment-thumbnail colorbox-939 " alt="Vicki and Jeff Whitmoyer (1)"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/dsc01372.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/dsc01372-50x50.jpg" class="attachment-thumbnail colorbox-939 " alt="Vicki and Jeff Whitmoyer (2)"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/dsc01430.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/dsc01430-50x50.jpg" class="attachment-thumbnail colorbox-939 " alt="Vicki and Jeff Whitmoyer (3)"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/dsc01439.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/dsc01439-50x50.jpg" class="attachment-thumbnail colorbox-939 " alt="Vicki and Jeff Whitmoyer (4)"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/mo-029.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/mo-029-50x50.jpg" class="attachment-thumbnail colorbox-939 " alt="Vicki and Jeff Whitmoyer (5) © Unique Vacations, Inc."></a>
+                    </dt></dl>
+                    <br>
+                </div>
+            </li>
+            <li class="content">
+                <h2>Tenesa and Grover Ducksworth</h2>
+                <p>Property: Sandals Antigua Destination Wedding</p>
+                <p>Molly, I want to thank you so much with helping us put this together. The wedding was beautiful and we enjoyed ourselves. My mother did too. Thanks again and here is a wedding picture.</p>
+                <div id="gallery-13" class="gallery galleryid-937 gallery-columns-8 gallery-size-thumbnail"><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/an-0211.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/an-0211-50x50.jpg" class="attachment-thumbnail colorbox-937 " alt="an-0211"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/an-035.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/an-035-50x50.jpg" class="attachment-thumbnail colorbox-937 " alt="an-035 © Unique Vacations, Inc."></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/an-083.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/an-083-50x50.jpg" class="attachment-thumbnail colorbox-937 " alt="an-083 © Unique Vacations, Inc."></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/an-107.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/an-107-50x50.jpg" class="attachment-thumbnail colorbox-937 " alt="an-107 © Unique Vacations, Inc."></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon portrait">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/ducksworth.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/ducksworth-50x50.jpg" class="attachment-thumbnail colorbox-937 " alt="ducksworth"></a>
+                    </dt></dl>
+                    <br>
+                </div>
+            </li>
+            <li class="content">
+                <h2>Anthony Thomas and Gina Clutter</h2>
+                <p>Property: Sandals Antigua Destination Wedding</p>
+
+                <p>Molly, Everything was amazing. We had a lovely time and enjoyed every minute. I will keep all your new information on file because we are planning to go back the summer after next, we are trying to make a Sandals vacation every two years. We would like to more often, but we will see.</p>
+                <div id="gallery-14" class="gallery galleryid-934 gallery-columns-8 gallery-size-thumbnail"><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/an-134.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/an-134-150x150.jpg" class="attachment-thumbnail colorbox-934 " alt="an-134 © Unique Vacations, Inc."></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon portrait">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/clutter1.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/clutter1-150x150.jpg" class="attachment-thumbnail colorbox-934 " alt="clutter1"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/clutter2.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/clutter2-150x150.jpg" class="attachment-thumbnail colorbox-934 " alt="clutter2"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/clutter3.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/clutter3-150x150.jpg" class="attachment-thumbnail colorbox-934 " alt="clutter3"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon portrait">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/clutter4.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/clutter4-150x150.jpg" class="attachment-thumbnail colorbox-934 " alt="clutter4"></a>
+                    </dt></dl>
+                    <br>
+                </div>
+            </li>
+            <li class="content">
+                <h2>Cassie Cochran &amp; Rico Lopez</h2>
+                <p>Property: Sandals Antigua Destination Wedding</p>
+                <p>The ceremony went really well. The officiant was very accommodating. We chose to write our own vows and ceremony words and she followed it to a tee (even if it was longer than normal). The only real complaint we had was that the wedding escort was a little late coming to escort us to the ceremony site. We chose to bring our own music and that wasn’t an issue, either. The beach gazebo was gorgeous even though we opted not to do any decorations other than the natural ones. They did a great job packing up our Sand Ceremony vases so we didn’t have any issues getting it home. The professional photos came out great (though I was a little worried since there was no real example of the quality of the photos online to view). I couldn’t have asked for anything more, except maybe a longer honeymoon!</p>
+                <div id="gallery-15" class="gallery galleryid-932 gallery-columns-8 gallery-size-thumbnail"><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/an-021.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/an-021-150x150.jpg" class="attachment-thumbnail colorbox-932 " alt="an-021 © Unique Vacations, Inc."></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/an-056.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/an-056-150x150.jpg" class="attachment-thumbnail colorbox-932 " alt="an-056 © Unique Vacations, Inc."></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon landscape">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/lopez1.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/lopez1-150x150.jpg" class="attachment-thumbnail colorbox-932 " alt="lopez1"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon portrait">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/lopez2.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/lopez2-150x150.jpg" class="attachment-thumbnail colorbox-932 " alt="lopez2"></a>
+                    </dt></dl><dl class="gallery-item">
+                    <dt class="gallery-icon portrait">
+                        <a href="http://www.mollyscaribbean.com/wp-content/uploads/lopez3.jpg" class="cboxElement"><img width="50" height="50" src="http://www.mollyscaribbean.com/wp-content/uploads/lopez3-150x150.jpg" class="attachment-thumbnail colorbox-932 " alt="lopez3"></a>
+                    </dt></dl>
+                    <br>
+                </div>
+            </li>
+            <li class="content">
+                <h2>Art and Lindsay Quintero</h2>
+                <p>Hey Molly,</p>
+                <p>Thanks for emailing and asking how our honeymoon went. It was absolutely fabulous! It was a dream come true and I would suggest it to anyone. I would love to go back some day. Now I really know why they call it paradise. Thank you for all your help you were wonderful. Hope to talk to you soon with more trips to Jamaica. I will refer as many people as I can to you. Thanks again for all your help.</p>
+            </li>
+            <li class="content">
+                <h2>Debbie Ryland</h2>
+                <p>Good afternoon Molly!</p>
+                <p>I haven’t gotten all of my Thank You notes out, but you are on my list.We had the best time of our lives. I could not of asked for it to be better. Thank you so much for all your help. The room was perfect and it over looked the beach, as well as the pool.The wedding was comfortable without any worries. We loved our photographer and videographer. They had us laughing the whole time. It was too perfect!! Also, everyone there was absolutely wonderful.I will not forget you when we plan on going on a nice vacation again in the next year or so. You will be the first one we will call and or recommend to anyone else.Thanks again and have a super day!</p>
+            </li>
+            <li class="content">
+                <h2>Nick &amp; Annette Caldwell</h2>
+                <p>Molly,</p>
+                <p>Just a note to let you know that we had a great time on our vacation at Sandals Dunn’s River Resort in Jamaica for our 25th Anniversary! We know that we will plan another vacation there in the next few years.We have mentioned our trip to several of our friends and co-workers and have given them your name &amp; e-mail address to obtain more information. We understand that if we refer someone and they book a vacation at Sandals we can obtain award points for the referral.Thanks again for all your help in arranging our vacation!</p>
+            </li>
+            <li class="content">
+                <h2>Gary Epps</h2>
+                <p>Dear Molly,</p>
+                <p>Oh Wow, did we ever have a great time. Sandals far exceeded the expectations of what even the brochures tell about.We had such a great time. Of course we have the quartet to ride the wave of our own personal party making. We sang for 10 Brides during the week. Our faces were everywhere and the staff and the guests requesting that we sing for them or were spotting the bride for us to surprise with “When I Fall In Love”.Molly I know that most couples go to these resorts for the time with just themselves, but I would recommend that everyone go with friends to ‘bounce’ ideas with and to share the experience. This is just an observation of the differences we saw with couples. Some of course ‘mix’ well and others were very content to just have the time with each other. We of course had sooo much fun and at times were the only ones participating in aquarobics and talent show and costumes etc. Bragging of course, but we were a hit and I know Sandals would like to see us again. They did not however offer to pay us to do so, but I bet if we wrote today saying we are coming back next month they would offer something.Molly, this really was wonderful and we are all planning and starting a savings account to get back there perhaps for next year.We will plan to stay in touch.Thanks.</p>
+            </li>
+            <li class="content">
+                <h2>Lee Craig</h2>
+                <p>Molly,</p>
+                <p>we had a wonderful time. Before it all cools into a lovely memory, here are some thoughts about our Sandal’s Whitehouse vacation.We arrived late, hungry and tired. We weren’t interested in doing anything more than getting dinner. I saw lots of nice tours being given new-comers who arrived during the day, but the staff is also good at skipping the formalities for starving guests. Everyone has the famous Jamaican graciousness but the staff is new and I noticed that they are less polished than the crew at the Royal Caribbean site.Whitehouse is positioned as a European Spa facility and the spa is fabulous. The spa rooms are beautiful, even one double room with its own hot tub. The spa has a central courtyard with a hot tub and a cold (refrigerated!) tub anyone can use. There are many wonderful spa treatments being offered. We loved this aspect.Everyone says the joy of a Caribbean vacation is meeting the people. We agree. Thestaff is fabulous and we made many friends during our week. All-in-all, I wouldn’t have changed a thing. It was a fabulous time. Thanks for all your help in getting us there, Molly. We really appreciate you.Fondly.</p>
+            </li>
+            <li class="content">
+                <h2>Rachel Seashore &amp; Marc (Paul) Goode</h2>
+                <p>Hi Molly,</p>
+                <p>Just wanted to let you know we would like to be part of your referrals program – and have recommended you to some folks, Matt and Lacey, who are hoping to do some sort of Caribbean wedding vacation as Paul and I did. Our information hasn’t changed – you have our phone and address – and I’ll include it again below. We really did have a GREAT wedding and vacation and wouldn’t change a minute of it. Thanks for all your help. We will of course recommend you in the future any time we have opportunity.Hope you’ve had a nice weekend.</p>
+            </li>
+            <li class="content">
+                <h2>Rudy &amp; Kasey Antonowicz</h2>
+                <p>Dear Molly,</p>
+                <p>Thanks for the e-mail! It was wonderful at Sandals Grand Ocho Rios! It is a really big resort! The people were wonderful as always and we are missing it greatly! We will sure pass your name around so please include us in the referral program. You were so much help to us and I am sure we will be calling you again when we are ready to go!! We hope to maybe go next time with the kids to Beaches Negril! Take care!</p>
+            </li>
+            <li class="content">
+                <h2>Stacy (and Scott) Goodall</h2>
+                <p>Hi Molly,</p>
+                <p>We just returned from our Sandal’s honeymoon in Jamaica and wanted to let you know we had a fabulous time. The beach in Negril was spectacular, and they upgraded us (I think like 3 categories) to a beach front ocean view room. The beach at Ocho Rios was pretty lame after Negril, but the pool was awesome and we loved the cabanas. We liked the food better at Negril, but service was great at both places.Thanks for all your help and recommendations, flights etc. went off without a hitch. It was a great time and we truly appreciate all you did to make it a great honeymoon!</p>
+            </li>
+            <hr>
+            <li class="content">
+                <h2>Takishia &amp; Kyle Rodrick</h2>
+                <p>Molly,</p>
+                <p>We had a wonderful time at Sandals Grande Ocho Rios. It was a beautiful resort with very courteous and fun staff, great food and drinks, and just an overall fun, positive vibe. We would love to be in your rewards program and we will definitely refer anyone who is talking about taking a trip to you. Kyle &amp; I are really going to try to go again within the next couple of years so we will give you a call when we are ready to book. Thanks again for all of your help and insight!!</p>
+            </li>
+            <li class="content">
+                <h2>Tawny</h2>
+                <p>Hi Molly,</p>
+                <p>We had the most unbelievably wonderful time!!!! We want to go back next year. I will definitely let other people know about you. Sandals resorts are better than I could have ever imagined.</p>
+                <p>Thank you so much, and I will be sure to sign us up on that website.</p>
+            </li>
+            <li class="content">
+                <h2>Wendy Gradwell</h2>
+                <p>Dear Molly,</p>
+                <p>Yes we did have a wonderful time at Sandals Negril. The room was great, the hotel and the staff were lovely we loved the food. Thank you so much for your help. You helped make our honeymoon very special and I will definitely contact you for future vacations.</p>
+            </li>
+            <li class="content">
+                <h2>Bree and Jerry Sanford</h2>
+                <p>We had a wonderful time. We did get the two room villa and the other room was mostly empty. Thank you so much for that!!! It really did make all the difference. The butler is the only way to go! We went on 3 tours. Innertubeing on the white river, Horseback riding in the ocean and best of all I got to swim with the dolphins. We went snorkeling, kayaking and all that. How cool. Our first night they had a beach party at the Rivera and from there we went to Margiritaville. How much fun. I can’t put words to how cool the whole thing was. We had a 30min. massage. Then we had a chamomile and Champaign bath with a 60min. side by side massage after horseback riding. The food on the pier at the Rivera wasn’t great. The Italian and Asian restaurants were great. Rum raisin ice cream is to die for! Again, thank you so much. The rum was great also!</p>
+            </li>
+        </ul>
+    </div>
+</main>
+
+</body>
+</html>

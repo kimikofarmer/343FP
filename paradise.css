@@ -1,0 +1,35 @@
+video {
+    position: absolute;
+    top: 20px;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    z-index: 100001;
+    display: block;
+    width: 320px;
+    height: 240px;
+}
+
+#debug {
+    position: absolute;
+    top: 0;
+    z-index: 100002;
+    display: none;
+    width: 320px;
+    height: 240px;
+}
+
+#compare {
+    display: none;
+    width: 320px;
+    height: 240px;
+}
+
